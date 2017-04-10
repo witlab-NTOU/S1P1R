@@ -115,7 +115,7 @@ typedef struct PHB_Item   // Packet history buffer (Q2) item
 
 typedef struct SPR_Node  // Data structure for node
 {
-    int nX, nY, nZ;
+    float nX, nY, nZ;                      // 2017.04.10 fixed bug (從 int 改為 float) 
     int nodeType;
     float currentEnergy, consumedEnergy;   // energy of node
 	bool bIsTreePathNode;                  // 是否為 tree 的節點 (是否在 shortest path)
